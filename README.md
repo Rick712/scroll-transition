@@ -33,4 +33,8 @@ div.trans.transition-started {
 }
 ```
 
-##
+## How it works
+
+- The script uses the Intersection Observer api. Check support [here](https://caniuse.com/#feat=intersectionobserver)
+- It only adds the class once, so the transition only triggers once
+- The class triggers when the element is 33% visible. This is configurable in the file in the `config` object. 0.33 is 33%, and so on
